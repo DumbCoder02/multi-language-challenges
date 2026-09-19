@@ -1,0 +1,24 @@
+How to Run: Palindrome Checker (Java)
+=====================================
+
+Requirements
+  - Java Development Kit (JDK) 8 or newer (https://adoptium.net)
+
+Steps
+1. Open a terminal (Terminal on macOS or Linux, Command Prompt or PowerShell on Windows).
+2. Check that the required tool is installed:
+       javac -version
+       java -version
+3. Move into the problem folder, starting from the repository root:
+       cd Java/Palindrome_Checker
+4. Compile the program:
+       javac Solution.java
+5. Run the program:
+       java Solution
+6. Try it. Type the following, pressing Enter after each line:
+       A man, a plan, a canal: Panama
+   You should see:
+       Palindrome
+
+Press Ctrl+C at any time to stop the program early.
+Compiling creates Solution.class (and sometimes other .class files). These are build output and should not be committed to GitHub.

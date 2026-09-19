@@ -1,0 +1,31 @@
+How to Run: Tic-Tac-Toe (C++)
+=============================
+
+Requirements
+  - A C++17 compiler such as g++ (GCC 7 or newer) or clang++
+  - Windows: install MinGW-w64 or MSYS2 to get g++
+  - macOS: running g++ in the terminal offers to install the Xcode command line tools
+
+Steps
+1. Open a terminal (Terminal on macOS or Linux, Command Prompt or PowerShell on Windows).
+2. Check that the required tool is installed:
+       g++ --version
+3. Move into the problem folder, starting from the repository root:
+       cd CPlusPlus/Tic_Tac_Toe
+4. Compile the program:
+       g++ -std=c++17 -Wall -o solution solution.cpp
+5. Run the program:
+       ./solution
+       solution.exe    (use this one on Windows)
+6. Try it. Type the following, pressing Enter after each line:
+       1 1
+       2 1
+       1 2
+       2 2
+       1 3
+   You should see:
+       The board is printed before every move. After the last move:
+       Player X wins!
+
+Press Ctrl+C at any time to stop the program early.
+Compiling creates an executable named solution (solution.exe on Windows). It is build output and should not be committed to GitHub.

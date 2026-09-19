@@ -1,0 +1,76 @@
+Title: To-Do List
+
+Problem Description
+Build a console to-do list manager. The program reads one command per line, keeps the tasks in memory, and reports the result of each command. When it starts it prints a line listing the available commands.
+
+Commands (the command word is not case sensitive)
+add <task>       Add a new task. New tasks are not done.
+list             Show every task with its number and status.
+done <number>    Mark the task with that number as done.
+remove <number>  Delete the task with that number. Later tasks move up by one.
+quit             Print Goodbye. and stop.
+
+Input Format
+One command per line. Blank lines are ignored. Task numbers start at 1.
+
+Output Format
+At startup:
+Commands: add <task>, list, done <number>, remove <number>, quit
+
+Responses:
+- Added: <task>                    after add
+- Usage: add <task>                if add has no task text
+- <n>. [ ] <task>                  for every open task in list
+- <n>. [x] <task>                  for every finished task in list
+- No tasks.                        if list is used while the list is empty
+- Task <n> marked as done.         after done
+- Removed: <task>                  after remove
+- Invalid task number.             if the number is missing, not a whole number, or not in the list
+- Unknown command.                 if the command word is not recognised
+- Goodbye.                         after quit
+
+If the input ends without quit, the program simply stops.
+
+Constraints
+- 0 <= number of tasks <= 1000
+- Task text is a single line of at most 200 characters.
+
+Sample Input 1
+add Buy milk
+add Finish homework
+list
+done 2
+list
+remove 1
+list
+quit
+
+Sample Output 1
+Commands: add <task>, list, done <number>, remove <number>, quit
+Added: Buy milk
+Added: Finish homework
+1. [ ] Buy milk
+2. [ ] Finish homework
+Task 2 marked as done.
+1. [ ] Buy milk
+2. [x] Finish homework
+Removed: Buy milk
+1. [x] Finish homework
+Goodbye.
+
+Sample Input 2
+done 5
+remove x
+add
+dance
+list
+quit
+
+Sample Output 2
+Commands: add <task>, list, done <number>, remove <number>, quit
+Invalid task number.
+Invalid task number.
+Usage: add <task>
+Unknown command.
+No tasks.
+Goodbye.

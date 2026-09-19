@@ -1,0 +1,56 @@
+Title: Simple Calculator
+
+Problem Description
+Write a program that reads a single arithmetic expression made of two numbers and one operator, evaluates it, and prints the result rounded to two decimal places.
+
+Supported operators
++   addition
+-   subtraction
+*   multiplication
+/   division
+
+Input Format
+One line in the form:
+<number1> <operator> <number2>
+The three parts are separated by spaces.
+
+Output Format
+- The result with exactly two digits after the decimal point.
+- Error: Division by zero   if the operator is / and number2 is 0.
+- Error: Invalid operator   if the operator is not one of + - * /.
+- Error: Invalid input      if the line does not contain exactly three parts, or a number cannot be read.
+
+Constraints
+- -1000000 <= number1, number2 <= 1000000
+- Numbers may be integers or decimals.
+- Exactly one expression is evaluated per run.
+
+Sample Input 1
+12 + 5
+
+Sample Output 1
+17.00
+
+Sample Input 2
+10 / 4
+
+Sample Output 2
+2.50
+
+Sample Input 3
+3.5 * -2
+
+Sample Output 3
+-7.00
+
+Sample Input 4
+7 / 0
+
+Sample Output 4
+Error: Division by zero
+
+Sample Input 5
+8 % 3
+
+Sample Output 5
+Error: Invalid operator

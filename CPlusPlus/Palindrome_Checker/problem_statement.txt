@@ -1,0 +1,40 @@
+Title: Palindrome Checker
+
+Problem Description
+Given a line of text, decide whether it reads the same forwards and backwards. Only letters and digits are considered, and letter case is ignored. Spaces and punctuation are skipped.
+
+Input Format
+A single line of text.
+
+Output Format
+Print Palindrome if the cleaned text reads the same in both directions.
+Otherwise print Not a palindrome.
+
+Constraints
+- 0 <= length of the line <= 1000
+- The line contains printable ASCII characters.
+- A line with no letters or digits is treated as a palindrome.
+
+Sample Input 1
+A man, a plan, a canal: Panama
+
+Sample Output 1
+Palindrome
+
+Sample Input 2
+Hello, World
+
+Sample Output 2
+Not a palindrome
+
+Sample Input 3
+Was it a car or a cat I saw?
+
+Sample Output 3
+Palindrome
+
+Sample Input 4
+12321
+
+Sample Output 4
+Palindrome

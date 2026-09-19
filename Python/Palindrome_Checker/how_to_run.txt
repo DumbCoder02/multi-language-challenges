@@ -1,0 +1,22 @@
+How to Run: Palindrome Checker (Python)
+=======================================
+
+Requirements
+  - Python 3.8 or newer (https://www.python.org/downloads/)
+
+Steps
+1. Open a terminal (Terminal on macOS or Linux, Command Prompt or PowerShell on Windows).
+2. Check that the required tool is installed:
+       python3 --version
+       python --version    (use this one on Windows)
+3. Move into the problem folder, starting from the repository root:
+       cd Python/Palindrome_Checker
+4. Run the program:
+       python3 solution.py
+       python solution.py    (use this one on Windows)
+5. Try it. Type the following, pressing Enter after each line:
+       A man, a plan, a canal: Panama
+   You should see:
+       Palindrome
+
+Press Ctrl+C at any time to stop the program early.
